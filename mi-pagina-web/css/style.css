@@ -1,0 +1,321 @@
+body {
+  font-family: "Arial";
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+a {
+  text-decoration: underline;
+  color: black;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+header {
+  background-image: url(../img/Ipurua1.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.logoHead {
+  width: 60px;
+  height: auto;
+  float: left;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+nav button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+nav a {
+  display: block;
+  padding: 5px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #121212;
+}
+
+nav button:focus + ul {
+  display: block;
+}
+
+h1 {
+  font-size: 40px;
+  background-color: #bb464abc;
+  text-decoration: double;
+}
+
+h2 {
+  background-color: #d07b7d8e;
+  text-decoration: solid;
+}
+
+h3 {
+  background-color: #ca8e9172;
+  text-decoration: solid;
+}
+
+main {
+  padding: 20px;
+}
+
+article {
+  background-color: #ffcacab9;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-bottom: 2px solid black;
+}
+
+.ftTexto, .ftTexto1 {
+  width: 200px;
+  height: auto;
+  border: 2px solid black;
+}
+
+.ftTexto {
+  float: right;
+  margin-left: 15px;
+
+}
+
+.ftTexto1 {
+  float: left;
+  margin-right: 15px;
+}
+
+.ftTexto2 {
+  width: 300px;
+  height: auto;
+  float: right;
+  margin-left: 400px;
+  border: 2px solid black;
+}
+
+.conFotoLista {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.textoArticulo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+
+.perfil {
+  width: 200px;
+  height: auto;
+  float: left;
+  margin: 20px;
+}
+
+
+ol {
+  padding-left: 50px;
+  list-style-type: upper-roman;
+}
+
+form {
+  line-height: 2;
+}
+
+form label {
+  display: block;
+  font-weight: bolder ;
+  font-size: 20px;
+}
+form input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+form button {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  background-color: #f35560;
+  color: #fff;
+  cursor: pointer;
+}
+
+#posicion {
+  width: 206px;
+  height: 30px;
+  padding: 5px;
+}
+
+table {
+  width: 800px;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.tablax {
+  width: auto;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+
+table th,
+table td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #e6e6e6;
+}
+
+table tr {
+  border: 1px solid #ddd;
+}
+
+.conTablaFoto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tablaPlantilla {
+  flex: 0 0 auto;
+}
+
+.Plantilla {
+  float: right;
+  width: 560px;
+  height: auto;
+  margin: 12px;
+}
+
+.conPlantillas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid #557cf3;
+  margin-left: 10px;
+}
+
+.flaticon {
+  width: 20px;
+}
+
+.conimagen {
+  display: flex;
+  align-items: center;
+}
+
+
+footer {
+  background-color: #557cf3;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  
+  header {
+    padding: 20px 40px;
+  }
+
+ 
+  nav {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  nav li {
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    padding: 10px;
+    color: #1d1d1d;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  nav a:hover {
+    background-color: #1d1d1d;
+    color: white;
+  }
+
+  main {
+    max-width: 100%;
+  }
+
+  table {
+    margin: 0;
+  }
+}
